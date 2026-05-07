@@ -36,4 +36,9 @@ struct BswResult {
     T      value;
 };
 
+// UART configuration enums. enum class prevents collision with HAL constants.
+enum class UartWordLength : uint8_t { Bits8, Bits9 };
+enum class UartStopBits   : uint8_t { One, Two };
+enum class UartParity     : uint8_t { None, Even, Odd };
+
 } // namespace Bsw

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(g++ -std=c++17 -Wall -Wextra -Wpedantic -DBSW_HAL_STUB -I. -include test/stubs/gpio_hal_stub.hpp -include test/stubs/uart_hal_stub.hpp gpio/gpio.cpp uart/uart.cpp -c)"
+    ]
+  }
+}
